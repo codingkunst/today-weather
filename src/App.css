@@ -1,0 +1,14 @@
+body {
+    background: url(https://img.freepik.com/free-vector/sky-background-video-conferencing_23-2148639325.jpg?semt=ais_hybrid);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
