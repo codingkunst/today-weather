@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Weather from './components/Weather';
+import WeatherInfo from './components/WeatherInfo';
 import WeatherButton from './components/WeatherButton';
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
   const apiKey = import.meta.env.VITE_API_KEY;
 
   const [weather, setWeather] = useState(null);
+  let city = ['seoul', 'chuncheon'];
 
   // 현재 위치
   const getCurrentLocation = () => {
@@ -36,8 +37,8 @@ function App() {
   return (
     <div>
       <div className='container'>
-        <Weather weather={weather} />
-        <WeatherButton />
+        <WeatherInfo weather={weather} />
+        <WeatherButton city={city} />
       </div>
     </div>
   )

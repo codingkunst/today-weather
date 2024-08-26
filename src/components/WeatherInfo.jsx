@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Weather = (props) => {
+const WeatherInfo = (props) => {
   return (
     <div className='rounded border border-inherit border-solid p-5 m-5 bg-sky-100'>
       <p>{props.weather?.name}</p>
@@ -10,4 +10,4 @@ const Weather = (props) => {
   )
 }
 
-export default Weather
+export default WeatherInfo
